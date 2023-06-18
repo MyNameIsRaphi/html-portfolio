@@ -1,0 +1,83 @@
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    height:100vh;
+    width: 100vw;
+}
+.hero {
+    height:60vh;
+    width:100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.image {
+    margin-top: 15vh;
+    grid-area: 1/2/1/3;
+    display: flex;
+    justify-content: center;
+}
+.title {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    
+    grid-area: 2/2/2/3;
+}
+img {
+    height:15vh;
+    
+}
+body {
+    margin: 0px;
+}
+.container > div {
+    display: flex;
+    justify-content: center;
+    flex-flow:column;
+}
+.header {
+    margin-top: 5vh;
+    grid-area: 1/2/1/3;
+    align-items: center;
+}
+html {
+    font-family: 'Ubuntu', sans-serif;
+    background-color:#C7EEFF;
+    color:#393737;
+}
+h1 {
+    font-family: 'Noto Serif', serif;
+}
+h2 {
+    font-family: 'Noto Serif', serif;
+}
+.summary {
+   
+    flex-flow: column;
+    grid-area:2/2/3/3;
+}
+.education {
+    grid-area:3/2/3/3;
+    flex-flow:column;
+}
+ul {
+    flex-flow:column;
+    justify-content: center;
+}
+.skills {
+    grid-area:4/2/4/3;
+}
+div > div > * {
+    display:flex;
+    justify-content: center;
+}
+.other {
+    grid-area:5/2/5/3;
+}
+footer {
+    display: flex;
+    width:100vw;
+    justify-content: center;
+}
